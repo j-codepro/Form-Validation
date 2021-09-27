@@ -1,3 +1,125 @@
-#content {
+:root {
+    --first-color: #e44d26;
+    --light-color: #f0f0f0;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Source Sans Pro', sans-serif;
+    background: var(--first-color);
+    background: -webkit-linear-gradient(to right, #f16529, #e44d26);
+    background: linear-gradient(to right, #f16529, #e44d26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    min-width: 100%;
+}
+
+.header {
+    border-bottom: 1px solid var(--light-color);
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid var(--light-color);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+}
+
+.form-control.success input {
+    border-color: rgb(29, 168, 29);
+}
+
+.form-control.error input {
+    border-color: rgba(255, 0, 0, 0.87);
+}
+
+.form-control.error i.bx.bxs-error-circle {
+    color: rgba(255, 0, 0, 0.87);
+    visibility: visible;
+}
+
+.form-control.success i.bx.bxs-check-circle {
+    color: rgb(29, 168, 29);
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 38px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: rgba(255, 0, 0, 0.87);
+}
+
+.form button {
+    background-color: var(--first-color);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #e44c26e1;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 300px;
+    }
 }
