@@ -4,11 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- JS -->
     <script src="main.js" defer ></script>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="content">
+        <div class="container">
+            <div class="header">
+                <h2>Create Account</h2>
+            </div>
+            <form action="form" id="form">
+                <div class="form-control">
+                    <label>Username</label>
+                    <input type="text" placeholder="gaston56" id="username">
+                    <i class='bx bxs-check-circle' ></i>
+                    <i class='bx bxs-error-circle'></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label>Email</label>
+                    <input type="email" placeholder="gaston56@mail.com" id="email">
+                    <i class='bx bxs-check-circle' ></i>
+                    <i class='bx bxs-error-circle'></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" id="password">
+                    <i class='bx bxs-check-circle' ></i>
+                    <i class='bx bxs-error-circle'></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label>Password check</label>
+                    <input type="password" placeholder="Password" id="password-check">
+                    <i class='bx bxs-check-circle' ></i>
+                    <i class='bx bxs-error-circle'></i>
+                    <small>Error message</small>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
