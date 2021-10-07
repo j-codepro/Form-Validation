@@ -1,2 +1,2 @@
 # form-validation
-[Live Demo](https://j-codepro.github.io/form-validation/)
+[Live Demo](https://jeremy-mairey.github.io/form-validation/)
